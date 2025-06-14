@@ -1,5 +1,8 @@
 # 🍟 McDonald’s Banner Animation
 
+<video src="assets/preview.mp4" controls width="400">
+</video>
+
 12-second animated banner created for a McDonald’s promo.  
 Built with HTML, CSS, and JavaScript. Loops smoothly and scales responsively.
 
