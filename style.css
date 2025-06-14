@@ -1,0 +1,283 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    height: 100vh;
+    aspect-ratio: 1/2;
+    max-width: 500px;
+    max-height: 1000px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.banner > .meal {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#default-bg {
+    position: absolute;
+    z-index: -1;
+}
+
+#meal1-png {
+    z-index: 2;
+}
+
+.footer {
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+    z-index: 3;
+}
+
+.headline {
+    position: absolute;
+    width: 98%;
+    left: 0;
+    transform: translate(-10%, 110%) scale(0);
+    z-index: 0;
+}
+
+.stripe {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    left: 57%;
+    top: 25%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.side-headline {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+}
+
+#end-text {
+    width: 100%;
+    transform: translate(5%, -15%) scale(0);
+    z-index: 1;
+    opacity: 1;
+}
+
+#price-890 {
+    width: 0%;
+    left: 50%;
+    top: 60%;
+    z-index: 1;
+}
+
+#chicken-paprika {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 69%;
+    left: 36%;
+    opacity: 0;
+}
+
+#bg_frame3 {
+    opacity: 0;
+    transform: translate(0%, 0%) scale(1);
+}
+
+#meal2-png {
+    opacity: 0;
+    z-index: 2;
+    transform: translate(0%, 0%) scale(1);
+}
+
+#cheeseburgerTxt {
+    position: absolute;
+    width: 64%;
+    height: auto;
+    top: 69%;
+    left: 28%;
+    opacity: 0;
+}
+
+#bg_frame4 {
+    opacity: 0;
+    z-index: 0;
+    transform: translate(0%, 0%) scale(1);
+}
+
+#meal3-png {
+    opacity: 0;
+    z-index: 2;
+    transform: translate(0%, 0%) scale(1);
+}
+
+#fish-burgerTxt {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 69%;
+    left: 40%;
+    opacity: 0;
+}
+
+#bg_frame5 {
+    opacity: 0;
+    position: absolute;
+    transform: translate(0%, 0%) scale(1);
+}
+
+#button-cta {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transform: translate(100%);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes expandHeadline {
+    to {
+        transform: translate(0%, 61%) scale(1);
+    }
+}
+
+@keyframes fadeInStripes {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shrinkHeadline {
+    from {
+        transform: translate(0%, 61%) scale(1);
+    }
+    to {
+        transform: translate(-10%, 115%) scale(0);
+    }
+}
+
+@keyframes expandEndTxtToLeft {
+    from {
+        transform: translate(5%, -15%) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-31%, -13%) scale(0.52);
+        opacity: 1;
+    }
+}
+
+@keyframes expandPrice {
+    to {
+        width: 36%;
+        top: 37%;
+        left: 4%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInProductTxt {
+    to {
+        opacity: 1;
+        transform: translate(-3%, -15%);
+    }
+}
+
+@keyframes scaleFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        transform: translate(0%, 0%) scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes pulseEndTxt {
+    0% {
+        transform: translate(-31%, -13%) scale(0.52);
+    }
+    50% {
+        transform: translate(-31%, -13%) scale(0.62);
+    }
+    100% {
+        transform: translate(-31%, -13%) scale(0.52);
+    }
+}
+
+@keyframes moveStripes {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+
+@keyframes scaleEndText {
+    0% {
+        transform: translate(40%) scale(0);
+        z-index: 2;
+    }
+    70% {
+        transform: translate(0%) scale(1.1);
+        z-index: 2;
+    }
+    100% {
+        transform: translate(0%) scale(1);
+        z-index: 2;
+    }
+}
+
+@keyframes pulseButton {
+    0% {
+        transform: translate(0%) scale(1);
+    }
+    50% {
+        transform: translate(0%, 1%) scale(0.95);
+    }
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
